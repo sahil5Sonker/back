@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(254, 189, 47, 0.4); }
+    70% { box-shadow: 0 0 0 6px rgba(254, 189, 47, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(254, 189, 47, 0); }
+  }
+  
+  .animate-dropdown {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .group:hover .group-hover\:rotate-180 {
+    transform: rotate(180deg);
+  }
+  
+  /* Scrollbar customizations */
+  div::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  div::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
